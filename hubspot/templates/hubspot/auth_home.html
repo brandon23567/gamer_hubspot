@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>gamer hubspot</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/auth_home.css' %}">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<h2>GamerHubspot</h2>
+		</div>
+	</header>
+
+	<section class="main_content_container">
+		<div class="left_side">
+			<ul class="left_navbar">
+				<li><a href="{% url 'auth_home' %}">HOME</a></li>
+				<li><a href="{% url 'upload_vid' %}">UPLOAD</a></li>
+				<li><a href="{% url 'signout' %}">LOG OUT</a></li>
+			</ul>
+		</div>
+		<div class="right_side">
+			<div class="videos_container">
+				<div class="video">
+					<div class="video_container">
+						<video src="{% static 'vids/1 (1).mp4' %}" controls class="vid">
+					</div>
+					<div class="title_container">
+						<h2>This is a test tile for the above video</h2>
+						<span>BY: @Username</span>
+					</div>
+				</div>
+
+				<div class="video">
+					<div class="video_container">
+						<video src="{% static 'vids/1 (1).mp4' %}" controls class="vid">
+					</div>
+					<div class="title_container">
+						<h2>This is a test tile for the above video</h2>
+						<span>BY: @Username</span>
+					</div>
+				</div>
+
+				<div class="video">
+					<div class="video_container">
+						<video src="{% static 'vids/1 (1).mp4' %}" controls class="vid">
+					</div>
+					<div class="title_container">
+						<h2>This is a test tile for the above video</h2>
+						<span>BY: @Username</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="normal_footer">
+			This is the footer for now
+		</div>
+		<div class="bottom_nav_icons_container"></div>
+	</footer>
+</body>
+</html>
